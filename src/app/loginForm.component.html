@@ -1,0 +1,19 @@
+<form (ngSubmit)="showAlert(loginForm.value)" #loginForm="ngForm">
+  <div class="form-group">
+    <label for="username">Username
+      <input type="text"  class="form-control" name="user.username" required [(ngModel)]="user.username">
+      </label>
+  </div>
+
+   <div class="form-group">
+    <label for="password">Password
+      <input type="password"  class="form-control" name="user.password" required [(ngModel)]="user.password">
+    </label>
+  </div>
+  <button type="submit" [disabled]="!loginForm.form.valid">Submit</button>
+</form>
+<div [hidden]="!loginForm.form.valid">
+  {{submitMessage}}
+</div>
+
+ {{user.username}}  
