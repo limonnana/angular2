@@ -5,12 +5,12 @@ import { loginFormComponent } from "./app.loginForm.component";
 import { FormsModule }   from '@angular/forms'; 
 import {platformBrowserDynamic} from "@angular/platform-browser-dynamic";
 import { HttpModule, JsonpModule } from '@angular/http';
-import { HttpService } from './http.service';
+import { HttpService01 } from './http.service01';
 
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,HttpModule,JsonpModule ],
-  providers: [HttpService],
+  providers: [HttpService01],
   declarations: [ AppComponent, loginFormComponent ],
   bootstrap:    [ AppComponent ]
 })

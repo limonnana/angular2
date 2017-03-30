@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { User }    from './app.user';
 import {NgModule} from "@angular/core";
 import { NgForm } from '@angular/forms';
-import { HttpService } from './http.service';
+import { HttpService01 } from './http.service01';
 
 @Component({selector: 'loginForm', templateUrl: 'app/loginForm.component.html'})
 export class loginFormComponent{
 
-constructor(private _httpService: HttpService) {}
+constructor(private _httpService: HttpService01) {}
   
   user: Object = {};
   
